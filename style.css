@@ -33,3 +33,9 @@ body {
 .square.selected {
   outline: 3px solid #4CAF50;
 }
+
+.square.highlight {
+  outline: 3px solid #f39c12;
+  /* or use box-shadow for a glow effect */
+}
+
