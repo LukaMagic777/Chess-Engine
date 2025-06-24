@@ -1,30 +1,28 @@
-/* style.css */
+#chessboard {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  aspect-ratio: 1 / 1;
+  width: 90vmin; /* Will be 90% of the smaller screen side */
+  max-width: 480px;
+  border: 2px solid black;
+}
+
+.square {
+  aspect-ratio: 1 / 1;
+  width: 100%;
+  font-size: 3vmin; /* Scales with screen size */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 body {
   margin: 0;
   height: 100vh;
   display: flex;
-  align-items: center;
   justify-content: center;
-  background-color: #333; /* Optional: for contrast */
-}
-
-#chessboard {
-  display: grid;
-  grid-template-columns: repeat(8, 60px);
-  grid-template-rows: repeat(8, 60px);
-  width: 480px;
-  height: 480px;
-  border: 2px solid black;
-}
-
-.square {
-  width: 60px;
-  height: 60px;
-  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: 36px;
+  background: #333;
 }
 
 .light {
